@@ -1,0 +1,5 @@
+# Copyright (C) 2025 Cesar Perez
+
+[virtualenvs]
+in-project = true
+prompt = "{project_name}"
