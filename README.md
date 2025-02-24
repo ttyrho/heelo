@@ -1,1 +1,1 @@
-# Python Package Template
+# Heelo, an opinionated Python package template
