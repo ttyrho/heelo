@@ -1,0 +1,18 @@
+# Copyright (C) 2024 Cesar Perez
+
+[flake8]
+
+# In an 80-column terminal, if we activate numbering in Vim we have
+# about 72 columns left.
+max-line-length = 72
+
+# We should limit the complexity of the code we write to make our
+# software easier to maintain.
+# See: https://en.wikipedia.org/wiki/Cyclomatic_complexity
+max-complexity = 4
+
+per-file-ignores =
+    # On init files we are importing stuff that we are not using in the
+    # same file. Inside thos files that is ok.
+    # Source: https://flake8.pycqa.org/en/latest/user/error-codes.html
+    __init__.py: F401

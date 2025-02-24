@@ -1,0 +1,40 @@
+# Copyright (C) 2025 Cesar Perez
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "heelo"
+version = "0.0.0"
+license = "GPL-3.0-or-later"
+
+readme = "README.md"
+description = ""
+keywords = []
+
+homepage = "https://github.com/ttyrho/heelo"
+repository = "https://github.com/ttyrho/heelo"
+
+authors = [
+    "Cesar Perez <ttyrho@gmail.com>"
+]
+
+maintainers = [
+    "Cesar Perez <ttyrho@gmail.com>"
+]
+
+packages = [
+    { include = "heelo" }
+]
+
+[tool.poetry.scripts]
+heelo = "heelo.__main__:run"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+
+[tool.poetry.group.test.dependencies]
+flake8 = "^7.1.2"
+mypy = "^1.15.0"
+
